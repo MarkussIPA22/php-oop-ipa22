@@ -1,33 +1,34 @@
 <?php
- include "Dog.php";
- include "Cat.php";
-include "Bird.php";
+
+include "Tire.php";
 include "Car.php";
-//  $myDog = new Dog;
-//   $myDog2 = new Dog;
-//  $myBird = new Bird("Black",  543);
-
-//  $myCat = new Cat;
-//  $myCat2 = new Cat;
-//  $myCat3 = new Cat;
-$myCar = new Car ("BMW" ,612);
-$myCar2 = new Car ("Audi" ,213);
-// $cats = [];
- 
-// $myBird->color= "Black;"
-//  echo $myBird->color;
-// $myBird->fly();
-
-// $myBird2 = new Bird("Blue" ,13);
-// $myBird2->fly();
-//  $myDog->color = "Black";
-//  echo $myDog ->color;
-//  echo $myDog2->color;
-
-// for ($i=0; $i < 21; $i++) { 
-//     array_push($cats, new Cat);
-    
-    var_dump($myCar);
+include "Train.php";
 
 
-?>
+/*$Bird1 = new Bird("skoda", 14);
+echo $Bird1->name . "<br>";
+
+$Bird2 = new Bird("gaz", 12);
+echo $Bird2->name . "<br>";
+
+$Bird3 = new Bird("kaija", 16);
+echo $Bird3->name . "<br>";
+
+$Car1 = new Car("golf", 147543);
+//echo $Car1->name . "<br>";
+
+$Car2 = new Car("volvo", 16);
+
+$Car2->increaseMileage(240);
+echo "<br>";
+*/
+$Tire1 = new Tire (133, "Summer", "like new");
+echo $Tire1->size . "<br>";
+echo $Tire1->type . "<br>";
+
+$Car1 = new Car("BMW", "0.01");
+echo Car::$describe;
+Car::makeNoise();
+
+//$Bird2->fly();
+//$Bird3->fly();

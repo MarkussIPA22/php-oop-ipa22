@@ -1,21 +1,20 @@
-<!-- <?php
+<?php
 
-// class Bird {
-//     public $color;
-//     private $age;
+class Bird {
+    public $name;
+    private $age;
 
-// public function __construct($c,$a) {
-// $this->color = $c;
-// $this->age = $a;
+    public function __construct($n, $a) {
+        $this->name = $n;
+        $this->age = $a;
+    }
 
-// }
+    public function __destruct() {
+        echo "<br>" . $this->name . "dead💀" ;
+    }
 
-//     public function fly() {
-//         echo "Fly away" . $this->color . "Bird";
-//     }
-
-//     public function __destruct(){
-//         echo $this->brand . "is dead at " $this->milage ;
-//     }
+    public function fly() {
+        echo "Fly away" . $this->name;
+    }
     
-// } -->
+}
