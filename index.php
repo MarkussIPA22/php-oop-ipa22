@@ -3,7 +3,8 @@
 include "Tire.php";
 include "Car.php";
 include "Train.php";
-
+include "Dog.php";
+include "Cat.php";
 
 /*$Bird1 = new Bird("skoda", 14);
 echo $Bird1->name . "<br>";
@@ -29,6 +30,8 @@ echo $Tire1->type . "<br>";
 $Car1 = new Car("BMW", "0.01");
 echo Car::$describe;
 Car::makeNoise();
+
+$Cat1 = new Cat (Janis);
 
 //$Bird2->fly();
 //$Bird3->fly();

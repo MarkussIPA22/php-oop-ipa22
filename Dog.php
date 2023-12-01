@@ -1,7 +1,16 @@
 <?php
 
 class Dog {
-    public $color= "green";
-    private $age = 0;
+    public $name;
+    private $age;
+
+    public function __construct($n, $a ) {
+        $this->name = $n;
+        $this->age = $a;
+
 }
+public function birthday() {
+    
+}
+
 
