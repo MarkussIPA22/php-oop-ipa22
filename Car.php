@@ -1,21 +1,14 @@
 <?php
-include "Vehicle.php";
-class Car extends Vehicle {
+
+include_once "Vehicle.php";
+
+class Car extends Vehicle
+{
    
-    static $describe = "i am mostly made out of metal and i think i am albanian and harijs thinks hes from pskov but he hasnt even been to russian once in his life but he is a big retard  lol lol lol lol l ol o lajkadjadajidsahosaghidsagasghidahdash";
+    static $describe = "I have 4 wheels, but sometimes 3.";
     
-
-   
-
-    public function __destruct() {
-        echo $this->brand . "  " . $this->mileage;
+    static function makeNoice(){
+        echo "Beep,Beep!";
     }
-
-    public function increaseMileage($amount) {
-        $this->mileage = $this->mileage+$amount;
-    }
-    static function makeNoise() {
-        echo "BEEP , BEEP" . "<br>";
-    }
-    
+ 
 }

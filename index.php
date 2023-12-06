@@ -3,35 +3,60 @@
 include "Tire.php";
 include "Car.php";
 include "Train.php";
-include "Dog.php";
-include "Cat.php";
+include "Math.php";
 
-/*$Bird1 = new Bird("skoda", 14);
-echo $Bird1->name . "<br>";
+// Train::makeNoice();
 
-$Bird2 = new Bird("gaz", 12);
-echo $Bird2->name . "<br>";
+// $myTire1 = new Tire(30, "Winter", 69);
 
-$Bird3 = new Bird("kaija", 16);
-echo $Bird3->name . "<br>";
+// echo $myTire1->size."<br>";
+// echo $myTire1->type."<br>";
 
-$Car1 = new Car("golf", 147543);
-//echo $Car1->name . "<br>";
+// echo Car::$describe;
+// Car::makeNoice();
 
-$Car2 = new Car("volvo", 16);
+// include "Dog.php";
+// include "Cat.php";
+// include "Bird.php";
 
-$Car2->increaseMileage(240);
-echo "<br>";
-*/
-$Tire1 = new Tire (133, "Summer", "like new");
-echo $Tire1->size . "<br>";
-echo $Tire1->type . "<br>";
+// // Uztaisīt objektu
+// $myBird = new Bird("Black", 541);
+// echo $myBird->color . "<br>";
+// $myBird->fly();
 
-$Car1 = new Car("BMW", "0.01");
-echo Car::$describe;
-Car::makeNoise();
+// $myBird2 = new Bird("Blue", 0.5);
+// $myBird2->fly();
 
-$Cat1 = new Cat (Janis);
+// $myDog = new Dog;
+// $myDog2 = new Dog;
+// $myDog->color = "Black";
+// // echo $myDog2->color;
 
-//$Bird2->fly();
-//$Bird3->fly();
+
+// // Uztaisi klasi Cat, kuram ir
+// // publisk color un publisks age
+// // un uztaisi sev 3 kaķus.
+
+// // Saglabā savus kaķus masīvā
+// // $cats = [new Cat, new Cat, new Cat];
+
+// // Pārtaisi kodu tā, lai kaķi
+// // tiek uztaisīti un ielikti
+// // masīvā ar ciklu.
+// $cats = [];
+// for ($i = 0; $i < 21; $i++) {
+//   array_push($cats, new Cat);
+// }
+
+// // var_dump($cats);
+
+// Math::addTwo(4,9);
+echo Math::addTwo(4,9);
+
+echo Math::factorial(10);
+
+echo Math::sum([4,2]) ."<br>";
+
+echo Math::average([1,3]);
+
+echo Math::max([4,2,32]) ."<br>";
